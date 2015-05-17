@@ -1,4 +1,4 @@
-define('Box2DWrapper',
+define('Box2dWrapper',
 	[],
 	function () {
 

@@ -37,10 +37,6 @@ define('MouseTouch',
 	                                  false, false, false, 0/*left*/, null);
 
 	        first.target.dispatchEvent(simulatedEvent);
-	        if ( event.type == "touchmove" && movingTile != null )
-	        {
-	            event.preventDefault();
-	        }
 	    }
 
 		var touchFactor = 1.0;

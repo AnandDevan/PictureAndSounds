@@ -18,8 +18,7 @@ define('GameObject',
 			this.image = new Image();
 			this.image.src = url + '.png';
 
-			this.audio = new Audio();
-			this.audio.src = url + '.wav'
+			this.audio = new Audio(url + '.wav');
 		}
 
 		GameObject.prototype.draw = function(canvasContext) {

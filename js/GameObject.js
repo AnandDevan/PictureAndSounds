@@ -1,6 +1,6 @@
 define('GameObject', 
-	[],
-	function () {		
+	['Resources'],
+	function (Resources) {		
 		'use strict';
 
 		var GameObject = function(radius, x, y)
@@ -18,7 +18,7 @@ define('GameObject',
 			this.image = new Image();
 			this.image.src = url + '.png';
 
-			this.audio = new Audio(url + '.wav');
+			this.audio = Resources.getAudio(url);
 		}
 
 		GameObject.prototype.draw = function(canvasContext) {

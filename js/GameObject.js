@@ -15,9 +15,7 @@ define('GameObject',
 		}
 
 		GameObject.prototype.setUrl = function(url) {
-			this.image = new Image();
-			this.image.src = url + '.png';
-
+			this.image = Resources.getImage(url);
 			this.audio = Resources.getAudio(url);
 		}
 
